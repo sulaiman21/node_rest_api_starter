@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"target": "ES2017",
+		"module": "commonjs",
+		"checkJs": true,
+		"declaration": true,
+		"outDir": "./build",
+		"rootDir": ".",
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitAny": true,
+		"preserveConstEnums": true
+	},
+	"include": [".", "./src"],
+	"extend": ["node_modules"]
+}

@@ -1,0 +1,23 @@
+{
+	"development": {
+		"username": "saqib",
+		"password": "Lyngby2023",
+		"database": "VirtualSeatingPlan",
+		"host": "135.181.57.83",
+		"dialect": "mysql"
+	},
+	"test": {
+		"username": "saqib",
+		"password": "Lyngby2023",
+		"database": "VirtualSeatingPlan",
+		"host": "135.181.57.83",
+		"dialect": "mysql"
+	},
+	"production": {
+		"username": "saqib",
+		"password": "Lyngby2023",
+		"database": "VirtualSeatingPlan",
+		"host": "135.181.57.83",
+		"dialect": "mysql"
+	}
+}
