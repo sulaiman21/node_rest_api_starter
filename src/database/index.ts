@@ -20,12 +20,12 @@ const sequelize = new Sequelize(DATABASE!, DB_USER!, DB_PASSWORD!, {
 	},
 });
 
+const tables = modals(sequelize);
+
 type DB = {
 	sequelize: Sequelize;
-	tables: any;
+	tables: typeof tables;
 };
-
-const tables = modals(sequelize);
 
 const db: DB = {
 	sequelize: sequelize,
