@@ -1,17 +1,17 @@
-### Install and Run
+## Install and Run
 
 - Use `yarn isntall`
 - To run project on development server
   - Use `yarn dev`
 
-### Build
+## Build
 
 - Use `yarn buil`
 - It will produce `dist` dir where all the code will be available for production
 
-### Run db migration
+## Run db migration
 
-## Add new field to exiting table
+### Add new field to exiting table
 
 - Add field into your exited table
 - switch to src dir using `cd src`
