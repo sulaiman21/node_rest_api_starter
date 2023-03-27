@@ -17,7 +17,8 @@
 - switch to src dir using `cd src`
 - then create migrations for your table with `npx sequelize-cli create:migrations --name your-table-name`. It will create a migration file in your migrations folder or dir
 - update your migration file and add the logic for table to add column i.e
-- ```
+
+  ```
      module.exports = {
        /**
        * @param {{ addColumn: (arg0: string, arg1: string, arg2: { type: any; allowNull: boolean; }) => any; }} queryInterface
