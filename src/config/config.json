@@ -1,23 +1,23 @@
 {
 	"development": {
-		"username": "saqib",
-		"password": "Lyngby2023",
-		"database": "VirtualSeatingPlan",
-		"host": "135.181.57.83",
+		"username": "db username",
+		"password": "db password",
+		"database": "db name",
+		"host": "hostname",
 		"dialect": "mysql"
 	},
 	"test": {
-		"username": "saqib",
-		"password": "Lyngby2023",
-		"database": "VirtualSeatingPlan",
-		"host": "135.181.57.83",
+		"username": "db username",
+		"password": "db password",
+		"database": "db name",
+		"host": "hostname",
 		"dialect": "mysql"
 	},
 	"production": {
-		"username": "saqib",
-		"password": "Lyngby2023",
-		"database": "VirtualSeatingPlan",
-		"host": "135.181.57.83",
+		"username": "db username",
+		"password": "db password",
+		"database": "db name",
+		"host": "hostname",
 		"dialect": "mysql"
 	}
 }
