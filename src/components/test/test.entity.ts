@@ -4,6 +4,7 @@ class TestEntity extends Model<InferAttributes<TestEntity>, InferCreationAttribu
 	declare id: CreationOptional<number>;
 	declare name: CreationOptional<string>;
 	declare content: CreationOptional<string>;
+	declare seat: CreationOptional<string>;
 
 	// For foregin key
 	// declare otherTableId: ForeignKey<otherTableName[<column name in string>]
@@ -26,6 +27,10 @@ export const testEntity = (sequelize: Sequelize) => {
 				allowNull: false,
 			},
 			content: {
+				type: DataTypes.STRING,
+				allowNull: true,
+			},
+			seat: {
 				type: DataTypes.STRING,
 				allowNull: true,
 			},
