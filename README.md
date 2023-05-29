@@ -1,12 +1,12 @@
 ## Install and Run
 
-- Use `yarn isntall`
+- Use `yarn install`
 - To run project on development server
   - Use `yarn dev`
 
 ## Build
 
-- Use `yarn buil`
+- Use `yarn build`
 - It will produce `dist` dir where all the code will be available for production
 
 ## Run db migration
