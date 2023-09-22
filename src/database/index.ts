@@ -1,10 +1,11 @@
-import { Sequelize } from "sequelize";
-import modals from "../models";
+import { Sequelize } from "sequelize-typescript";
+import { Users } from "../components/users/users.entity";
+import { CompanyEntity } from "../components/company/company.entity";
 
 const { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DATABASE } = process.env;
 
 const sequelize = new Sequelize(DATABASE!, DB_USER!, DB_PASSWORD!, {
-	dialect: "mssql",
+	dialect: "mysql",
 	host: DB_HOST!,
 	port: parseInt(DB_PORT!),
 	retry: {
@@ -18,18 +19,15 @@ const sequelize = new Sequelize(DATABASE!, DB_USER!, DB_PASSWORD!, {
 	pool: {
 		idle: 3000,
 	},
+	models: [Users, CompanyEntity],
 });
 
 type DB = {
 	sequelize: Sequelize;
-	tables: any;
 };
-
-const tables = modals(sequelize);
 
 const db: DB = {
 	sequelize: sequelize,
-	tables,
 };
 
 // DB Connection
@@ -38,6 +36,7 @@ sequelize
 	.then(() => {
 		// DB Connection success
 		// Sync the tables
+		// addModel();
 		sequelize
 			.sync({ force: false })
 			.then(() => {

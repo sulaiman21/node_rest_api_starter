@@ -3,7 +3,7 @@ import app from "./src/app";
 import http from "http";
 const debug = require("debug")("virtual-seating-be:server");
 
-const port = normalizePort(process.env.PORT || "3000");
+const port = normalizePort(process.env.PORT || "5050");
 app.set("port", port);
 const server = http.createServer(app);
 server.listen(port);

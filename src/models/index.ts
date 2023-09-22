@@ -1,15 +1,10 @@
-import { Sequelize } from "sequelize";
-import { testEntity } from "../components/test/test.entity";
+// import { Sequelize } from "sequelize";
+// import { Users } from "../components/users/users.entity";
 
-const models = (sequelize: Sequelize) => {
-	const _testEntity = testEntity(sequelize);
+// const models = () => {
+// 	return {
+// 		Users,
+// 	};
+// };
 
-	// Create Associations here
-	// _testEntity.hasMany(<model name>, { foreignKey: 'id' })
-
-	return {
-		TestEntity: _testEntity,
-	};
-};
-
-export default models;
+// export default models;
